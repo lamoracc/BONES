@@ -1,0 +1,168 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #1E1E1E;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding-left: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  position: relative;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #FF2626;
+  border-radius: 10px;
+}
+
+.header {
+  background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0) 100%);
+  height: 100px;
+  /* position: absolute; */
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+}
+
+.header__link:hover {
+  background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0) 100%);
+  color: #fff;
+}
+
+.header__item+.header__item {
+  padding-left: 10px;
+}
+
+.header__link {
+  padding: 39px 14px 39px 14px;
+  letter-spacing: 0.4em;
+}
+
+.logo {
+  margin-top: 30px;
+} 
+
+.menu__inner{
+  background: #2A2A2A;
+  box-shadow: 0px 0px 250px 216px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin: 50px 0;
+}
+
+.menu__title{
+  font-size: 40px;
+  letter-spacing: 0.25em;
+  margin: 0 0 40px 40px;
+  padding-top: 40px;
+}
+
+.menu__list{
+  margin:0 30px 0 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dish-name{
+  position: absolute;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  margin-top: 230px;
+  transition: 0.3s;
+}
+
+.menu__item{
+  margin: 0 15px 0 15px;
+  display: flex;
+  
+}
+
+.dish__img{
+  border-radius: 20px;
+}
+
+.menu__link:hover {
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.25));
+  
+}
+
+.menu__link:hover .dish-name{
+  margin-top: 180px;
+}
+
+.menu__link{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: .3s;
+}
+
+.menu__list+.menu__list{
+  padding-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+.footer__inner {
+  background: linear-gradient(180deg, rgba(18, 18, 18, 0) 0%, #121212 100%);
+  display: flex;
+  justify-content: center;
+  padding: 26px 0;
+}
+
+.contacts+.contacts {
+  margin-left: 40px;
+}

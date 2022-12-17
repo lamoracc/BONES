@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bones</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style-booking.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="main.html" class="logo">
+          <img src="images/logo.svg" alt="logo">
+        </a>
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="menu.html" class="header__link">МЕНЮ</a>
+          </li>
+          <li class="header__item">
+            <a href="contacts.html" class="header__link">КОНТАКТЫ</a>
+          </li>
+          <li class="header__item">
+            <a href="" class="header__link">
+              <img class="shopping-cart" src="images/shopping_cart.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="booking">
+    <div class="container">
+      <div class="booking__inner">
+        <div class="booking__logo">
+          <img src="images/logo.svg" alt="">
+        </div>
+        <form action="database.php" method="post" class="booking__list">
+          <p class="booking__text">
+            Ваше имя
+            <input name="name" type="text" class="booking__input--name">
+          </p>
+          <p class="booking__text">
+            Номер телефона
+            <input name="tel" type="tel" class="booking__input--tel">
+          </p>
+          <p class="booking__text">
+            Количество гостей
+            <input name="guest" type="number" class="booking__input--guests">
+          </p>
+          <p class="booking__text">
+            Дата посещения
+            <input name="data" type="date" class="booking__input--date">
+          </p>
+          <p class="booking__text">
+            Укажите время
+            <input name="time" type="time" class="booking__input--time">
+          </p>
+          <p class="booking__text">
+            Дополнительная информация
+            <input name="details" type="text" class="booking__input--details" rows="3">
+          </p>
+          <input type="submit" class="booking__input--submit" value="Забронировать">
+        </form>
+      </div>
+    </div>
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+  
+</html>
